@@ -1,0 +1,19 @@
+footer{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  background: $secondary-bg-color;
+  .wrapper{
+    margin: 1.2rem 0;
+  }
+  .back-to-top{
+    font-size: 1.4rem;
+  }
+  .footer-text{
+    font-size: .8rem;
+    letter-spacing: 1.2px;
+    :hover{
+      text-decoration: underline;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+.project-wrapper{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 5rem;
+}
+
+.project-container{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin: 0 1rem;
+  @include zoomImg();
+  .project-image > a > img{
+    filter: drop-shadow(0 0 0.45rem rgba(165, 165, 165, 0.342));
+    border-radius: 5px;
+    object-fit: cover;
+    width: 600px;
+    height: 350px;
+    @include respond(phone) {
+      width: 500px;
+      height: 250px;
+    }
+  }
+
+  .project-title{
+    font-weight: bold;
+    font-size: $medium-font-size;
+    margin-top: 1.50rem !important;
+    text-transform: uppercase;
+  }
+
+  .project-text{
+    font-size: $default-font-size;
+    margin-top: .50rem;
+    word-wrap: break-word;
+    ul{
+      display: flex;
+      align-content: center;
+      flex-direction: row;
+      flex-wrap: wrap;
+      li{
+        display: block;
+        background-color: rgb(226, 226, 226);
+        padding: .2rem .5rem;
+        margin: .5rem .3rem .5rem 0;
+      }
+    }
+  }
+
+  .project-btn{
+    font-size: $default-font-size;
+    margin-top: .7rem;
+    display: flex;
+    flex-direction: row;
+    @include underline();
+    a{
+      margin-right: .5rem;
+    }
+  }
+  .project-title, .project-text, .project-btn{
+    display: inline-block;
+  }
+}
+
+@include respond(tab-land) {
+  .project-wrapper{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .project-container{
+      display: flex;
+      align-items: center;
+      margin-bottom: 3rem;
+      .project-text{
+        text-align: center;
+        ul{
+          justify-content: center;
+        }
+      }
+    }
+  }
+}
+
+@include respond(phone) {
+  .project-container{
+    .project-title{
+      font-size: 1.4rem;
+    }
+  }
+}

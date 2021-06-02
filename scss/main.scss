@@ -1,0 +1,104 @@
+@import "./abstracts/config";
+
+@import "./sections/hero";
+@import "./sections/about";
+@import "./sections/portfolio";
+@import "./sections/contact";
+@import "./sections/footer";
+
+*{
+  box-sizing: border-box;
+
+  &:focus{
+    outline: none;
+  }
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+body{
+  height: 100%;
+  margin: 0;
+  line-height: 1.5;
+  font-family: 'Lora', serif;
+  color: $primary-color;
+  background: $primary-bg-color;
+}
+
+#home, #about, #portfolio, #contact{
+  position: relative;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+// headings
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a{
+  color: $primary-color;
+  text-decoration: none;
+}
+
+ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.section-title{
+  position: relative;
+  font-size: 3rem;
+  width: 100%;
+  text-align: center;
+  margin: 3.5rem 0;
+  letter-spacing: 2px;
+
+  @include respond(tab-port) {
+    margin: 2.1rem 0;
+    font-size: 2.5rem;
+  }
+}
+
+
+.separator{
+  border: none;
+  border-bottom: 3px solid $primary-color;
+  margin: 0 3rem;
+
+
+  @include respond(phone) {
+      margin: 0 1rem;
+    }
+
+
+}
+
+.wrapper{
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+
+#about, #portfolio, #contact{
+  margin-bottom: 6rem;
+
+  @include respond(tab-land) {
+    margin-bottom: 2rem;
+  }
+}
