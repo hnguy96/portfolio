@@ -398,7 +398,6 @@ footer {
     outline: none; }
 
 html, body {
-  max-width: 100%;
   overflow-x: hidden; }
 
 body {
@@ -413,8 +412,7 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  flex-wrap: wrap;
-  width: 100%; }
+  flex-wrap: wrap; }
 
 h1,
 h2,
@@ -438,7 +436,6 @@ img {
 .section-title {
   position: relative;
   font-size: 3rem;
-  width: 100%;
   text-align: center;
   margin: 3.5rem 0;
   letter-spacing: 2px; }
