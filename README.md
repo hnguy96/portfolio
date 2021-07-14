@@ -1,4 +1,4 @@
-# portfolio
+# hellohien2020
 Personal portfolio designed and built by Hien Nguyen on July 2020
 
 ## Built with
