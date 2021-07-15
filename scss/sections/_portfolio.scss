@@ -10,7 +10,7 @@
   flex-direction: column;
   align-items: flex-start;
   width: 50%;
-  margin: 0 1rem;
+  margin: 0 2.5rem;
   @include zoomImg();
   .project-image > a > img{
     border-radius: 5px;
@@ -73,8 +73,9 @@
     .project-container{
       display: flex;
       align-items: center;
+      margin: 0;
       margin-bottom: 3rem;
-      .project-text{
+      .project-text, .project-btn, .project-title{
         text-align: center;
         ul{
           justify-content: center;
@@ -86,6 +87,7 @@
 
 @include respond(phone) {
   .project-container{
+    width: 90%;
     .project-title{
       font-size: 1.4rem;
     }

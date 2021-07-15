@@ -260,7 +260,7 @@ header {
   flex-direction: column;
   align-items: flex-start;
   width: 50%;
-  margin: 0 1rem; }
+  margin: 0 2.5rem; }
   .project-container img {
     transition: transform .3s; }
     .project-container img:hover {
@@ -331,15 +331,18 @@ header {
     .project-wrapper .project-container {
       display: flex;
       align-items: center;
+      margin: 0;
       margin-bottom: 3rem; }
-      .project-wrapper .project-container .project-text {
+      .project-wrapper .project-container .project-text, .project-wrapper .project-container .project-btn, .project-wrapper .project-container .project-title {
         text-align: center; }
-        .project-wrapper .project-container .project-text ul {
+        .project-wrapper .project-container .project-text ul, .project-wrapper .project-container .project-btn ul, .project-wrapper .project-container .project-title ul {
           justify-content: center; } }
 
 @media (max-width: 37.5em) {
-  .project-container .project-title {
-    font-size: 1.4rem; } }
+  .project-container {
+    width: 90%; }
+    .project-container .project-title {
+      font-size: 1.4rem; } }
 
 #contact {
   background: #f8f1e2;
@@ -398,6 +401,7 @@ footer {
     outline: none; }
 
 html, body {
+  max-width: 100%;
   overflow-x: hidden; }
 
 body {
@@ -412,7 +416,8 @@ body {
   position: relative;
   display: flex;
   align-items: center;
-  flex-wrap: wrap; }
+  flex-wrap: wrap;
+  width: 100%; }
 
 h1,
 h2,
@@ -436,6 +441,7 @@ img {
 .section-title {
   position: relative;
   font-size: 3rem;
+  width: 100%;
   text-align: center;
   margin: 3.5rem 0;
   letter-spacing: 2px; }
